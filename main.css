@@ -99,9 +99,7 @@ aside .news{
     row-gap: 5%;
 }
 
-.botao-menu{
-    display: none;
-}
+
 
 @media screen and (max-width: 767px) {
         .content{
@@ -109,7 +107,7 @@ aside .news{
         }
 
         .container{
-            max-width: 90%
+            max-width: 90%;
         }
 
         
@@ -122,7 +120,7 @@ aside .news{
             margin-right: 0;
         }
 
-        .update{
+        .update-news{
             display: block;
 
         }
@@ -131,7 +129,7 @@ aside .news{
             margin-bottom: 32px;
         }
 
-        .aside{
+        aside{
             padding-left: 0;
         }
 
@@ -166,4 +164,31 @@ aside .news{
             margin-top: 16px;
             padding-bottom: 16px;
         }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+       
+    }
+
+
+    .botao-menu{
+        display: none;
+    }
+
+    .destaque .noticia a{
+        font-size: 1.5rem;
+        
+    }
+
+    .noticia{
+        grid-template-columns: repeat(2,49%);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .botao-menu{
+        display: none;
+    }
 }
